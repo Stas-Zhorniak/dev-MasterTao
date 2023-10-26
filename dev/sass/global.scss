@@ -1,0 +1,31 @@
+ body{
+    background: #282B38;
+ }
+ 
+.btn-primary {
+   border-radius: 90px;
+   font-weight: 600;
+   max-width: 171px;
+   width: 100%;
+   height: 50px;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 600;
+   line-height: 146%;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #E58D35;
+    --bs-btn-border-color: #E58D35;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #E58D35;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #E58D35;
+    --bs-btn-disabled-border-color: #E58D35;
+  }
+
+  

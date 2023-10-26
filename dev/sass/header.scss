@@ -1,0 +1,27 @@
+.navbar-light{
+	    padding-top: 22px;
+		.navbar-collapse {
+			
+			.navbar-nav {
+				margin: 0 auto;
+				max-width: 616px;
+				width: 100%;
+				justify-content: space-between;
+			.nav-link{
+				color: #FFF;
+				line-height: 146%;
+				white-space: nowrap;
+				}
+			}
+		}
+}
+
+.navbar-brand {
+    padding-left: 80px;
+	margin-right: 0;
+}
+
+.nav-btn {
+    margin-right: 75.5px;
+	white-space: nowrap;
+}
