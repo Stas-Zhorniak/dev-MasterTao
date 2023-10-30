@@ -1,27 +1,31 @@
-.navbar-light{
-	    padding-top: 22px;
-		.navbar-collapse {
-			
-			.navbar-nav {
-				margin: 0 auto;
-				max-width: 616px;
-				width: 100%;
-				justify-content: space-between;
-			.nav-link{
-				color: #FFF;
+.navbar-light {
+	padding-top: 22px;
+	.navbar-collapse {
+		.navbar-nav {
+			margin: 0 auto;
+			max-width: 616px;
+			width: 100%;
+			justify-content: space-between;
+			.nav-link {
+				color: #fff;
 				line-height: 146%;
 				white-space: nowrap;
-				}
 			}
 		}
+	}
 }
 
 .navbar-brand {
-    padding-left: 80px;
-	margin-right: 0;
+	padding-left: 80px;
+
+	margin-right: 98px;
 }
 
 .nav-btn {
-    margin-right: 75.5px;
+	margin-left: 97px;
 	white-space: nowrap;
+}
+
+.navbar-toggler-icon {
+	background-image: none;
 }

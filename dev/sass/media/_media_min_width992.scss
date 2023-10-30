@@ -1,5 +1,36 @@
 @media (min-width: 992px) {
-    .hamburger {
-        display: none;
-    }
+	.hamburger {
+		display: none;
+	}
+
+	.navbar-collapse {
+		margin-right: 75.5px;
+	}
+
+	.container-xxl {
+		padding-top: 26px;
+		max-width: 1850px;
+		width: 100%;
+	}
+
+	.slide {
+		padding-top: 159px;
+		padding-bottom: 228px;
+		padding-left: 92px;
+		padding-right: 92px;
+	}
+
+	.first-screen-title {
+		margin-left: 77px;
+	}
+
+	.first-screen-subtitle {
+		margin-left: 81px;
+		margin-top: 11px;
+		margin-bottom: 37px;
+	}
+
+	.btn-secondary {
+		margin-left: 80px;
+	}
 }
