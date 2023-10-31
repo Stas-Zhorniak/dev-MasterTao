@@ -1,0 +1,66 @@
+.calculation-title {
+	padding-top: 97px;
+	padding-bottom: 59px;
+	text-align: left;
+	max-width: 700px;
+	width: 100%;
+}
+
+.calculation-form {
+	max-width: 626px;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 61px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #363a4d;
+	border-radius: 20px;
+}
+
+.input-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.input-column {
+	max-width: 248px;
+	width: 100%;
+}
+
+.input-box {
+	margin-bottom: 20px;
+}
+
+.check-cont {
+	position: relative;
+}
+
+label {
+	font-weight: 600;
+	line-height: 126%;
+	margin-bottom: 6px;
+}
+
+#regist,
+#insurance,
+#file {
+	display: none;
+}
+
+[for="regist"],
+[for="insurance"] {
+	margin-left: 33px;
+}
+
+.file-cont {
+	max-width: 526px;
+}
+
+[for="file"] {
+	height: 50px;
+	width: 100%;
+	border: 1px dashed rgba(255, 255, 255, 0.26);
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 12px;
+}
