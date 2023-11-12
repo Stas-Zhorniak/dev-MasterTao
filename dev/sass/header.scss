@@ -2,8 +2,7 @@
 	padding-top: 22px;
 	.navbar-collapse {
 		.navbar-nav {
-			margin: 0 auto;
-			max-width: 616px;
+			max-width: 969px;
 			width: 100%;
 			justify-content: space-between;
 			.nav-link {
@@ -15,14 +14,21 @@
 	}
 }
 
-.navbar-brand {
-	padding-left: 80px;
+.navbar .container {
+	max-width: 1170px;
+	display: flex;
+	justify-content: space-between;
 
-	margin-right: 98px;
+	.navbar-brand {
+		margin-right: 0;
+		margin-left: 5px;
+	}
 }
 
 .nav-btn {
-	margin-left: 97px;
+	margin-left: 60px;
+	max-width: 171px;
+	width: 100%;
 	white-space: nowrap;
 }
 

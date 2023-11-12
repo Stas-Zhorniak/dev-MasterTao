@@ -1,6 +1,18 @@
 @media screen and (max-width: 991px) {
 	.container {
 		padding: 0;
+		.navbar-collapse {
+			text-align: center;
+			background-size: cover;
+			margin-top: 6px;
+			font-size: 24px;
+			line-height: 222%;
+			padding-bottom: 109px;
+			.navbar-nav {
+				padding-top: 40px;
+				background: hsl(230, 18%, 26%);
+			}
+		}
 	}
 
 	.navbar-light {
@@ -28,15 +40,10 @@
 		}
 	}
 
-	.navbar-collapse {
-		text-align: center;
-		background: #363a4d;
-		background-size: cover;
-		margin-top: 6px;
-		padding-top: 36px;
-		padding-bottom: 60px;
-		font-size: 24px;
-		line-height: 222%;
+	.nav-btn {
+		max-width: 295px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	.nav-item {
@@ -44,7 +51,7 @@
 	}
 
 	.btn-primary {
-		margin: 11px auto 0 auto;
+		margin: 11px auto 60px auto;
 		border-radius: 90px;
 		font-weight: 600;
 		max-width: 295px;
@@ -64,6 +71,17 @@
 		text-transform: uppercase;
 	}
 
+	h2 {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 124.5%;
+		text-transform: uppercase;
+	}
+
+	h2::after {
+		margin: 27px 7px 10px 19px;
+	}
+
 	h3 {
 		font-size: 16px;
 		line-height: 135.5%;
@@ -72,23 +90,41 @@
 	.container-xxl {
 		padding-left: 0;
 		padding-right: 0;
-		.slide {
-			background-position: center;
-			height: calc(100vh - 72px);
-			padding-top: 187px;
-			padding-bottom: 242px;
-			border-radius: 0;
-			.container {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
+		&::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			background: linear-gradient(
+				0deg,
+				rgba(4, 9, 17, 0.6) 0%,
+				rgba(88, 88, 88, 0) 100%
+			);
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		.slider-cont {
+			.slide {
+				background-position: center;
+				height: calc(100vh - 63px);
+				padding-top: 187px;
+				padding-bottom: 242px;
+				border-radius: 0;
+
+				.container {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
 			}
 		}
 	}
 
 	.first-screen-title,
 	.first-screen-subtitle {
-		max-width: 335px;
+		padding-top: 5px;
+		max-width: 250px;
 		width: 100%;
 		text-align: center;
 	}
@@ -99,5 +135,52 @@
 
 	.first-screen-subtitle {
 		margin-bottom: 18px;
+	}
+
+	.calculation {
+		.container {
+			.calculation-title {
+				text-align: center;
+				margin-top: 52px;
+				margin-bottom: 35px;
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 290px;
+				width: 100%;
+			}
+			.calculation-form {
+				margin: 0 20px;
+				padding-top: 50px;
+				.input-row {
+					flex-direction: column;
+					.input-column {
+						margin: 0 auto;
+						max-width: 275px;
+						width: 100%;
+						&.file-cont {
+							margin-top: 0;
+						}
+						.input-box {
+							margin-bottom: 17px;
+							&.checkbox-padding {
+								margin-bottom: 13px;
+								margin-left: 0;
+							}
+							[type="text"] {
+								max-width: 275px;
+								width: 100%;
+							}
+							#file-name {
+								padding-top: 0;
+							}
+							.btn-third {
+								max-width: 275px;
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

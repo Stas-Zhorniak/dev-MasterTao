@@ -2,7 +2,6 @@ $(document).ready(function(){
   $('.slider-cont').slick({
      dots: true,
      appendArrows: '.first-screen-nav',
-
      responsive: [
       {
         breakpoint: 991,
@@ -11,7 +10,6 @@ $(document).ready(function(){
         }
       },
     ]
-
   });
 });
 
@@ -21,3 +19,13 @@ burger.addEventListener('click', function(){
 }
 );
 
+document.getElementById('file').onchange = function () {
+  document.getElementById('file-name').innerHTML = this.value;
+}
+
+const checkButton = document.querySelectorAll('[type="checkbox"]');
+console.log (checkButton);
+
+checkButton.forEach (item => {
+  item.closest('.input-box').classList.add('checkbox-padding')
+})
