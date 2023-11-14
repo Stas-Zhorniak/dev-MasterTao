@@ -153,23 +153,23 @@
 				padding-top: 50px;
 				.input-row {
 					flex-direction: column;
+					padding-left: 30px;
+					padding-right: 30px;
 					.input-column {
 						margin: 0 auto;
-						max-width: 275px;
 						width: 100%;
 						&.file-cont {
 							margin-top: 0;
 						}
 						.input-box {
+							display: flex;
+							flex-direction: column;
 							margin-bottom: 17px;
 							&.checkbox-padding {
 								margin-bottom: 13px;
 								margin-left: 0;
 							}
-							[type="text"] {
-								max-width: 275px;
-								width: 100%;
-							}
+
 							#file-name {
 								padding-top: 0;
 							}

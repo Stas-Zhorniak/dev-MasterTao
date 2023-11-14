@@ -2,8 +2,7 @@
 	overflow-x: clip;
 	.container {
 		position: relative;
-		.calculation-title,
-		.title {
+		.title-primary {
 			text-align: left;
 			max-width: 700px;
 			width: 100%;
@@ -15,7 +14,7 @@
 		}
 		.calculation-img-cont {
 			position: absolute;
-			top: 70px;
+			bottom: -113px;
 			right: 68px;
 			.calculation-img {
 				max-width: 560px;
@@ -28,11 +27,6 @@
 .input-row {
 	display: flex;
 	justify-content: space-between;
-}
-
-.input-column {
-	max-width: 248px;
-	width: 100%;
 }
 
 .input-box {
@@ -61,6 +55,8 @@ label {
 }
 
 [for="file"] {
+	max-width: 526px;
+	width: 100%;
 	margin-top: 10px;
 	height: 42px;
 	width: 100%;
