@@ -74,4 +74,28 @@
 			}
 		}
 	}
+
+	.advantages {
+		.container {
+			padding-top: 95px;
+			margin: 113px auto 0px;
+			&::before {
+				min-height: 725px;
+				border-radius: 20px;
+				margin: -97px 0 0 0;
+			}
+			.advantages-title {
+				margin: 0 auto 56px;
+			}
+			.row {
+				.advantages-box {
+					.box-img {
+						margin-bottom: 15px;
+					}
+					.box-description {
+					}
+				}
+			}
+		}
+	}
 }

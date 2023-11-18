@@ -183,4 +183,39 @@
 			}
 		}
 	}
+
+	.advantages {
+		.container {
+			padding-top: 60px;
+			&::before {
+				content: "";
+				display: inline-block;
+				position: absolute;
+				background: #363a4d;
+				background-size: cover;
+				max-width: 1820px;
+				width: 100%;
+				min-height: 479px;
+				transform: translate(-50%);
+				left: 50%;
+				z-index: -1;
+			}
+			.advantages-title {
+				margin-top: 55px;
+				margin-bottom: 52px;
+			}
+			.row {
+				.advantages-box {
+					max-width: 560px;
+					width: 100%;
+					.box-img {
+						margin-bottom: 20px;
+					}
+					.box-description {
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
 }

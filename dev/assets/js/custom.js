@@ -24,13 +24,13 @@ document.getElementById('file').onchange = function () {
 }
 
 const checkButton = document.querySelectorAll('[type="checkbox"]');
-console.log (checkButton);
+
 
 checkButton.forEach (item => {
   item.closest('.input-box').classList.add('checkbox-padding')
 })
 
-mobileOnlySlider("#advantages-slider, true, false, 991");
+mobileOnlySlider("#advantages-slider", true, false, 991);
 
 function mobileOnlySlider ($slidername, $dots, $arrows, $breakpoint){
   var slider = $($slidername);
@@ -41,7 +41,7 @@ function mobileOnlySlider ($slidername, $dots, $arrows, $breakpoint){
     responsive: [
       {
         breakpoint: $breakpoint,
-        settings: "unslick"
+        settings: 'unslick'
       }
     ]
   };
@@ -55,5 +55,5 @@ function mobileOnlySlider ($slidername, $dots, $arrows, $breakpoint){
     if (!slider.hasClass("slick-initialized")) {
       return slider.slick(settings);
     }
-  })
+  });
 }
