@@ -6,6 +6,7 @@
 .slide {
 	border-radius: 20px;
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -22,17 +23,18 @@
 .first-screen-nav {
 	display: flex;
 	justify-content: space-between;
-	max-width: 1523px;
+	max-width: 1540px;
 	width: 100%;
 	position: absolute;
 	top: 52%;
 	transform: translate(-50%, -50%);
 	left: 50%;
-	.slick-arrow {
-		background: none;
-		border: none;
-		font-size: 0;
-	}
+}
+
+.slick-arrow {
+	background: none;
+	border: none;
+	font-size: 0;
 }
 
 .slick-dots {

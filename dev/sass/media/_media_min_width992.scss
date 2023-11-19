@@ -77,7 +77,7 @@
 
 	.advantages {
 		.container {
-			padding-top: 95px;
+			padding-top: 97px;
 			margin: 113px auto 0px;
 			&::before {
 				min-height: 725px;
@@ -93,6 +93,34 @@
 						margin-bottom: 15px;
 					}
 					.box-description {
+					}
+				}
+			}
+		}
+	}
+
+	.delivery {
+		.container {
+			padding-top: 130px;
+			.delivery-title {
+				margin: 0 auto 49px;
+			}
+			.delivery-cards {
+				padding: 0 67px 0 67px;
+				.delivery-cardbox {
+					.cardbox-info {
+						margin-bottom: 3px;
+					}
+
+					.cardbox-price {
+						margin-bottom: 18px;
+					}
+
+					.cardbox-btn {
+						.btn {
+							max-width: 153px;
+							width: 100%;
+						}
 					}
 				}
 			}
