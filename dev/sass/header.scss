@@ -1,10 +1,11 @@
 .navbar-light {
-	padding-top: 22px;
+	padding-top: 17px;
 	.navbar-collapse {
 		.navbar-nav {
 			max-width: 969px;
 			width: 100%;
 			justify-content: space-between;
+			align-items: center;
 			.nav-link {
 				color: #fff;
 				line-height: 146%;
@@ -20,6 +21,7 @@
 	justify-content: space-between;
 
 	.navbar-brand {
+		padding-bottom: 0;
 		margin-right: 0;
 	}
 }

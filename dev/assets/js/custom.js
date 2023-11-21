@@ -58,9 +58,10 @@ function mobileOnlySlider ($slidername, $dots, $arrows, $breakpoint){
   });
 }
 
-$('.delivery-cards').slick({
+$('.template-cards').slick({
   dots: false,
-  appendArrows: '.delivery-nav',
+  arrows: true,
+  // appendArrows: '.delivery-nav',
   infinite: true,
   speed: 1000,
   slidesToShow: 3,
@@ -86,30 +87,30 @@ $('.delivery-cards').slick({
   ]
 });
 
-$('.services-cards').slick({
-  dots: false,
-  appendArrows: '.services-nav',
-  infinite: true,
-  speed: 1000,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1400,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
+// $('.services-cards').slick({
+//   dots: false,
+//   appendArrows: '.services-nav',
+//   infinite: true,
+//   speed: 1000,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   responsive: [
+//     {
+//       breakpoint: 1400,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//         infinite: true,
+//       }
+//     },
+//     {
+//       breakpoint: 991,
+//       settings: {
+//         arrows: false,
+//         dots: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//   ]
+// });
