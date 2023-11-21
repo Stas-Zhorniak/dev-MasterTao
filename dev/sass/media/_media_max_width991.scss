@@ -151,6 +151,7 @@
 			.calculation-form {
 				margin: 0 20px;
 				padding-top: 50px;
+				padding-bottom: 22px;
 				.input-row {
 					flex-direction: column;
 					padding-left: 30px;
@@ -158,6 +159,9 @@
 					.input-column {
 						margin: 0 auto;
 						width: 100%;
+						&.check-cont {
+							padding-top: 19px;
+						}
 						&.file-cont {
 							margin-top: 0;
 						}
@@ -182,24 +186,31 @@
 				}
 			}
 		}
+		.title-primary h2:after {
+			content: "";
+			position: static;
+			display: inline-block;
+			width: 85px;
+			height: 2px;
+			background-color: #89c249;
+			margin: 26px 10px 10px 19px;
+		}
 	}
 
 	.advantages {
+		&::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			background: #363a4d;
+			top: 60px;
+			left: 0;
+			height: 479px;
+			width: 100%;
+			z-index: -1;
+		}
 		.container {
 			padding-top: 60px;
-			&::before {
-				content: "";
-				display: inline-block;
-				position: absolute;
-				background: #363a4d;
-				background-size: cover;
-				max-width: 1820px;
-				width: 100%;
-				min-height: 479px;
-				transform: translate(-50%);
-				left: 50%;
-				z-index: -1;
-			}
 			.advantages-title {
 				margin-top: 55px;
 				margin-bottom: 52px;
@@ -216,21 +227,25 @@
 					}
 				}
 			}
+			.slick-dots {
+				bottom: 64px;
+			}
 		}
 	}
 
 	.delivery {
+		padding-left: 0;
+		padding-right: 0;
 		.container {
 			padding-left: 15px;
 			padding-right: 15px;
 			.delivery-title {
 				max-width: 335px;
 				width: 100%;
-				margin: 60px auto 35px;
+				margin: 38px auto 35px;
 			}
 			.delivery-cards {
-				padding-left: 5px;
-				padding-right: 5px;
+				max-width: 335px;
 				.delivery-cardbox {
 					max-width: 335px;
 					width: 100%;
@@ -258,6 +273,54 @@
 		}
 		.slick-dots {
 			bottom: -52px;
+		}
+	}
+
+	.services {
+		margin-top: 99px;
+		&::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			background: #363a4d;
+			margin: 0 auto;
+			top: 0;
+			max-width: 1850px;
+			height: 100%;
+			left: 0;
+			right: 0;
+			z-index: -1;
+		}
+		.container {
+			padding-top: 54px;
+			padding-bottom: 81px;
+
+			.services-title {
+				text-align: center;
+				margin: 0 auto 38px;
+			}
+			.services-cards {
+				max-width: 335px;
+				.services-cardbox {
+					max-width: 335px;
+					padding-top: 250px;
+					padding-bottom: 33px;
+					padding-left: 30px;
+					margin-bottom: 20px;
+					height: auto;
+					img {
+						max-width: 335px;
+					}
+
+					.cardbox-title {
+					}
+					.cardbox-info {
+					}
+				}
+			}
+		}
+		.slick-dots {
+			bottom: -34px;
 		}
 	}
 }

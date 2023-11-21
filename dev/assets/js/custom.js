@@ -67,7 +67,7 @@ $('.delivery-cards').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1400,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -84,7 +84,32 @@ $('.delivery-cards').slick({
       }
     }
   ]
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+});
+
+$('.services-cards').slick({
+  dots: false,
+  appendArrows: '.services-nav',
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });

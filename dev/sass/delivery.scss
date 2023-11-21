@@ -7,7 +7,6 @@
 		.delivery-cards {
 			width: 100%;
 			margin: 0 auto;
-			max-width: 1323px;
 
 			.delivery-cardbox {
 				max-width: 360px;
@@ -83,13 +82,17 @@
 		.delivery-nav {
 			display: flex;
 			justify-content: space-between;
-			max-width: 1523px;
+
 			width: 100%;
 			position: absolute;
-			top: 67%;
+			top: 66%;
 			transform: translate(-50%, -50%);
 			left: 50%;
 		}
+	}
+	.slick-track {
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
@@ -119,9 +122,4 @@
 	left: 119px;
 	width: 24px;
 	height: 24px;
-}
-
-.slick-track {
-	display: flex;
-	justify-content: space-between;
 }
