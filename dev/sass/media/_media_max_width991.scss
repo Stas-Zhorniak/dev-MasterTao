@@ -198,37 +198,43 @@
 	}
 
 	.advantages {
+		margin: 60px auto 0;
+		padding-top: 55px;
 		&::before {
+			padding-bottom: 60px;
 			content: "";
 			display: inline-block;
 			position: absolute;
 			background: #363a4d;
-			top: 60px;
+			// margin-top: 60px;
+			top: 0px;
 			left: 0;
-			height: 479px;
+
+			height: 100%;
 			width: 100%;
 			z-index: -1;
 		}
 		.container {
-			padding-top: 60px;
 			.advantages-title {
-				margin-top: 55px;
 				margin-bottom: 52px;
 			}
 			.row {
 				.advantages-box {
-					max-width: 560px;
 					width: 100%;
+					margin-bottom: 6px;
 					.box-img {
 						margin-bottom: 20px;
 					}
 					.box-description {
-						margin-bottom: 25px;
+						margin-bottom: 85px;
 					}
 				}
 			}
 			.slick-dots {
-				bottom: 64px;
+				bottom: 53px;
+				margin: 0 auto;
+				max-width: 246px;
+				width: 100%;
 			}
 		}
 	}
@@ -242,7 +248,7 @@
 			.delivery-title {
 				max-width: 335px;
 				width: 100%;
-				margin: 38px auto 35px;
+				margin: 54px auto 35px;
 			}
 			.delivery-cards {
 				max-width: 335px;
