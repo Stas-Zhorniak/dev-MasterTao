@@ -89,20 +89,28 @@ $('.template-cards').slick({
 
 
 function accordionBg() {
-  const accordionItems = document.querySelectorAll(".accordion-item");
+  const accordionHeaders = document.querySelectorAll(".accordion-header");
 
   const removeItemBg = () => {
-      accordionItems.forEach(item => {
-          item.classList.remove("active-bg");
+      accordionHeaders.forEach(header => {
+          const accordionItem = header.closest(".accordion-item");
+          if (accordionItem) {
+              accordionItem.classList.remove("active-bg");
+          }
       });
   }
 
-  accordionItems.forEach(item => {
-      item.addEventListener('click', () => {
-          if (!item.classList.contains("active-bg")) {
-              removeItemBg(); // Закрываем предыдущий элемент, если открыт
+  accordionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+          const accordionItem = header.closest(".accordion-item");
+
+          if (accordionItem) {
+              if (!accordionItem.classList.contains("active-bg")) {
+                  removeItemBg(); // Закрываем предыдущий элемент, если открыт
+              }
+
+              accordionItem.classList.toggle("active-bg");
           }
-          item.classList.toggle("active-bg");
       });
   });
 }
