@@ -87,30 +87,24 @@ $('.template-cards').slick({
   ]
 });
 
-// $('.services-cards').slick({
-//   dots: false,
-//   appendArrows: '.services-nav',
-//   infinite: true,
-//   speed: 1000,
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   responsive: [
-//     {
-//       breakpoint: 1400,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1,
-//         infinite: true,
-//       }
-//     },
-//     {
-//       breakpoint: 991,
-//       settings: {
-//         arrows: false,
-//         dots: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-//   ]
-// });
+
+function accordionBg() {
+  const accordionItems = document.querySelectorAll(".accordion-item");
+
+  const removeItemBg = () => {
+      accordionItems.forEach(item => {
+          item.classList.remove("active-bg");
+      });
+  }
+
+  accordionItems.forEach(item => {
+      item.addEventListener('click', () => {
+          if (!item.classList.contains("active-bg")) {
+              removeItemBg(); // Закрываем предыдущий элемент, если открыт
+          }
+          item.classList.toggle("active-bg");
+      });
+  });
+}
+
+accordionBg();
