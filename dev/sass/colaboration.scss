@@ -1,0 +1,51 @@
+.colaboration {
+	.container {
+		.colaboration-title {
+			text-align: center;
+			span {
+				color: #fff;
+				font-size: 24px;
+				font-weight: 400;
+				line-height: 124.5%;
+			}
+		}
+		.colaboration-content {
+			display: flex;
+			flex-direction: column;
+			.second-part {
+				li {
+					&:last-child {
+						list-style-type: none;
+						max-width: 243px;
+						width: 100%;
+					}
+				}
+			}
+			.content-part {
+				display: flex;
+				justify-content: space-between;
+				ul {
+					max-width: 528px;
+					width: 100%;
+					li {
+						list-style-type: disc;
+						font-size: 17px;
+						font-weight: 300;
+						line-height: 156.5%;
+					}
+				}
+				.content-img {
+					img {
+						max-width: 555px;
+						width: 100%;
+						height: 406px;
+						border-radius: 20px;
+						object-fit: cover;
+						object-position: center;
+						filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+					}
+				}
+			}
+		}
+	}
+}

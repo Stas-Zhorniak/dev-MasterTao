@@ -116,3 +116,16 @@ function accordionBg() {
 }
 
 accordionBg();
+
+  function breakSpan(){
+    const title = document.querySelectorAll("h2");
+    title.forEach(item => {
+      const itemSpan = item.querySelector("span");
+      const itemBr = document.createElement("br");
+      if (itemSpan){
+        item.insertBefore(itemBr, itemSpan);
+      }
+    })
+  }
+   
+  breakSpan();
