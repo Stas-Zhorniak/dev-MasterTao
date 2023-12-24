@@ -52,7 +52,7 @@
 			}
 		}
 		.user-message {
-			padding: 38px 45px 38px 40px;
+			padding: 37px 35px 39px 45px;
 			display: flex;
 			flex-direction: column;
 			max-width: 390px;
@@ -88,6 +88,9 @@
 					font-size: 15px;
 					line-height: 126%;
 				}
+			}
+			.message-input {
+				height: 70px;
 			}
 			.btn {
 				margin-top: 12px;
