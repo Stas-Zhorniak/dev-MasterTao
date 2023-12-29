@@ -181,13 +181,41 @@
 					margin-bottom: 20px;
 					width: 100%;
 					height: auto;
-					img {
-					}
+				}
+			}
+		}
+	}
 
-					.cardbox-title {
+	.company-info {
+		padding-top: 152px;
+		padding-bottom: 113px;
+		.container {
+			padding-left: 92px;
+			.company-info-title {
+				margin-bottom: 43px;
+				h2::after {
+					margin: 17px 0;
+				}
+			}
+			.company-info-description {
+				max-width: 555px;
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 170%;
+				p {
+					margin-bottom: 24px;
+					strong {
+						font-weight: 400;
 					}
-					.cardbox-info {
-					}
+				}
+			}
+			.company-info-img {
+				position: absolute;
+				top: -58px;
+				right: 90px;
+				.info-img {
+					max-width: 550px;
+					width: 36vw;
 				}
 			}
 		}
