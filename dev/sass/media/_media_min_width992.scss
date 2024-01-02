@@ -220,4 +220,110 @@
 			}
 		}
 	}
+
+	.questions {
+		.container {
+			.questions-title {
+				text-align: center;
+				margin-bottom: 49px;
+			}
+			.questions-content {
+				display: flex;
+				justify-content: space-between;
+				padding: 0px 80px;
+				.accordion {
+					display: flex;
+					flex-direction: column;
+					max-width: 716px;
+					width: 100%;
+					border-color: #3a444e;
+					.accordion-item {
+						background: none;
+						margin-bottom: 13px;
+						border-radius: 10px;
+						border: 1px solid #3a444e;
+						.accordion-header {
+							display: flex;
+							align-items: center;
+							height: 64px;
+							padding-left: 13px;
+							.accordion-button {
+								font-size: 18px;
+								&::after {
+									right: 20px;
+								}
+							}
+							.accordion-button:not(.collapsed)::after {
+								right: 20px;
+							}
+						}
+						.accordion-collapse {
+							.accordion-body {
+								max-width: 583px;
+								width: 100%;
+								padding-left: 34px;
+								padding-top: 0;
+								font-size: 17px;
+							}
+						}
+					}
+					.active-bg {
+						background: #fff;
+						.accordion-header {
+							.accordion-button {
+								color: #000;
+							}
+						}
+					}
+				}
+			}
+			.user-message {
+				padding: 37px 35px 39px 45px;
+				display: flex;
+				flex-direction: column;
+				max-width: 390px;
+				width: 100%;
+				background: #363a4d;
+				border-radius: 20px;
+				.message-title {
+					font-size: 24px;
+					font-weight: 700;
+					line-height: 126%;
+					margin-bottom: 8px;
+				}
+				.message-description {
+					font-size: 17px;
+					font-weight: 300;
+					line-height: 126%;
+					margin-bottom: 23px;
+				}
+				label {
+					display: none;
+				}
+				input {
+					margin-bottom: 14px;
+					padding-left: 20px;
+					border: none;
+					max-width: 310px;
+					width: 100%;
+					border-radius: 10px;
+					height: 56px;
+					outline: none;
+					&::placeholder {
+						color: #cbcbcb;
+						font-size: 15px;
+						line-height: 126%;
+					}
+				}
+				.message-input {
+					height: 70px;
+				}
+				.btn {
+					margin-top: 12px;
+					max-width: 310px;
+					width: 100%;
+				}
+			}
+		}
+	}
 }
