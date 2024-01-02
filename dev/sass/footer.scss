@@ -11,7 +11,7 @@ footer {
 		font-weight: 400;
 		line-height: 160.5%;
 	}
-	.container {
+	.footer-container {
 		margin-top: 41px;
 		max-width: 1140px;
 		padding: 0;
@@ -20,14 +20,11 @@ footer {
 			content: "";
 			position: static;
 			display: inline-block;
-			width: 1140px;
 			height: 2px;
 			background-color: #e58d35;
 			margin: 0 auto;
 		}
 		.footer-nav {
-			display: flex;
-			justify-content: space-between;
 			margin-top: 27px;
 			.contacts-info {
 				max-width: 263px;
@@ -58,8 +55,6 @@ footer {
 				}
 			}
 			.footer-navbar {
-				display: flex;
-				justify-content: space-between;
 				max-width: 784px;
 				width: 100%;
 				padding-right: 78px;

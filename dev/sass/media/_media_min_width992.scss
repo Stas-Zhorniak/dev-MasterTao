@@ -300,29 +300,106 @@
 				label {
 					display: none;
 				}
-				input {
-					margin-bottom: 14px;
-					padding-left: 20px;
-					border: none;
-					max-width: 310px;
-					width: 100%;
-					border-radius: 10px;
-					height: 56px;
-					outline: none;
-					&::placeholder {
-						color: #cbcbcb;
-						font-size: 15px;
-						line-height: 126%;
+			}
+		}
+	}
+
+	.colaboration {
+		margin-top: 98px;
+		padding-top: 92px;
+		padding-bottom: 80px;
+		&::before {
+			border-radius: 20px;
+			left: 43px;
+			right: 43px;
+		}
+		.container {
+			padding-left: 93px;
+			padding-right: 88px;
+			.colaboration-title {
+				margin-bottom: 92px;
+				h2 {
+					line-height: 135%;
+					&::after {
+						background-color: #89c249;
+					}
+					span {
+						p {
+							font-size: 24px;
+							font-weight: 400;
+							text-transform: lowercase;
+							margin-bottom: 0;
+							&::first-letter {
+								text-transform: uppercase;
+							}
+						}
 					}
 				}
-				.message-input {
-					height: 70px;
+			}
+			.colaboration-content {
+				display: flex;
+				flex-direction: column;
+				.second-part {
+					ul {
+						padding-top: 25px;
+						li {
+							&:last-child {
+								list-style-type: none;
+								max-width: 243px;
+								width: 100%;
+								padding-top: 14px;
+								margin-left: -11px;
+							}
+						}
+					}
 				}
-				.btn {
-					margin-top: 12px;
-					max-width: 310px;
+			}
+			.content-part {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 6px;
+				ul {
+					max-width: 528px;
 					width: 100%;
+					li {
+						font-size: 17px;
+						font-weight: 300;
+						line-height: 156.5%;
+						margin-bottom: 28px;
+					}
 				}
+				.content-img {
+					img {
+						max-width: 555px;
+						width: 100%;
+						height: 406px;
+						border-radius: 20px;
+						object-fit: cover;
+						object-position: center;
+						filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+					}
+				}
+			}
+		}
+	}
+
+	.footer-container {
+		&:before {
+			content: "";
+			position: static;
+			display: inline-block;
+			max-width: 1140px;
+			width: 100%;
+			height: 2px;
+			background-color: #e58d35;
+			margin: 0 auto;
+		}
+		.footer-nav {
+			display: flex;
+			justify-content: space-between;
+			.footer-navbar {
+				display: flex;
+				justify-content: space-between;
 			}
 		}
 	}
